@@ -32,9 +32,10 @@
       <nav><a href="../index.html">Home</a><a href="../products/index.html">Products</a><a href="../quality/index.html">Quality</a><a href="./" class="active">Blog</a><a href="../contact/index.html">Contact</a></nav>
       <div class="lang-toggle"><a href="what-is-aus32.html" class="active" hreflang="en">EN</a><a href="sq/cfare-eshte-aus32.html" class="" hreflang="sq">AL</a></div>
       <a class="cta-btn" href="https://wa.me/355676320456" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <div class="mobile-nav"><a href="../index.html">Home</a><a href="../products/index.html">Products</a><a href="../quality/index.html">Quality</a><a href="./" class="active">Blog</a><a href="../contact/index.html">Contact</a></div>
+  <div class="mobile-nav"><a href="../index.html">Home</a><a href="../products/index.html">Products</a><a href="../quality/index.html">Quality</a><a href="./" class="active">Blog</a><a href="../contact/index.html">Contact</a><a class="mn-wa" href="https://wa.me/355676320456" target="_blank" rel="noopener">WhatsApp</a></div>
 </header>
 <div class="pg-banner" style="--pg-img:url('bluvera-bg-label.jpg');--pg-pos:center 22%">
   <div class="wrap"><div class="section-head">
@@ -85,6 +86,6 @@
     <div class="foot-bottom"><span>© 2026 BluVera — Diesel Exhaust Fluid</span></div>
   </div>
 </footer>
-<script>try{localStorage.setItem('bluvera-lang',document.documentElement.lang==='sq'?'al':'en');}catch(e){}</script>
+<script>(function(){var h=document.querySelector('header'),b=document.querySelector('.menu-btn');if(!h||!b)return;function s(o){h.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');}b.addEventListener('click',function(e){e.stopPropagation();s(!h.classList.contains('open'));});document.addEventListener('click',function(e){if(!h.contains(e.target))s(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape')s(false);});})();</script>
 </body>
 </html>
