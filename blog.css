@@ -176,3 +176,13 @@
   .lang-toggle a[hreflang="en"]{--fl:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2060%2040%22%3E%3Crect%20width%3D%2260%22%20height%3D%2240%22%20fill%3D%22%23012169%22/%3E%3Cpath%20d%3D%22M0%200l60%2040M60%200L0%2040%22%20stroke%3D%22%23fff%22%20stroke-width%3D%228%22/%3E%3Cpath%20d%3D%22M0%200l60%2040M60%200L0%2040%22%20stroke%3D%22%23C8102E%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M30%200v40M0%2020h60%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2213%22/%3E%3Cpath%20d%3D%22M30%200v40M0%2020h60%22%20stroke%3D%22%23C8102E%22%20stroke-width%3D%228%22/%3E%3C/svg%3E");}
   .lang-toggle a[hreflang="sq"]{--fl:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2060%2040%22%3E%3Crect%20width%3D%2260%22%20height%3D%2240%22%20fill%3D%22%23E41E20%22/%3E%3Cg%20fill%3D%22%23000%22%3E%3Cpath%20d%3D%22M30%209l-3%203-5-3%202%205-6%202%206%202-3%205%205-2%202%204h4l2-4%205%202-3-5%206-2-6-2%202-5-5%203z%22/%3E%3Cpath%20d%3D%22M30%2018l-4%204%202%206h4l2-6z%22/%3E%3Ccircle%20cx%3D%2227%22%20cy%3D%229%22%20r%3D%222%22/%3E%3Ccircle%20cx%3D%2233%22%20cy%3D%229%22%20r%3D%222%22/%3E%3C/g%3E%3C/svg%3E");}
   @media (max-width:480px){.lang-toggle a[hreflang]{gap:5px;}.lang-toggle a[hreflang]::before{width:16px;height:11px;}}
+
+  /* ---- Products dropdown ---- */
+  .dd{position:relative;display:inline-flex;align-items:center;}
+  .dd-toggle::after{content:'';display:inline-block;width:6px;height:6px;margin-left:7px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);}
+  .dd-menu{display:none;position:absolute;top:100%;left:-14px;min-width:220px;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 34px rgba(8,29,56,.16);padding:8px;z-index:60;}
+  .dd-menu::before{content:'';position:absolute;left:0;right:0;top:-12px;height:12px;}
+  .dd:hover .dd-menu,.dd:focus-within .dd-menu{display:flex;}
+  nav .dd-menu a{padding:10px 12px;border-bottom:none;border-radius:6px;font-size:.92rem;color:var(--text);width:100%;}
+  nav .dd-menu a:hover{background:var(--surface);color:var(--accent-deep);}
+  .mobile-nav a.sub{padding-left:40px;font-size:.95rem;color:var(--text-soft);}
