@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# After you buy the domain, uncomment and edit the next line:
-# Sitemap: https://www.YOURDOMAIN.com/sitemap.xml
+Sitemap: https://www.bluveraexhaustfluid.com/sitemap.xml
