@@ -1,7 +1,7 @@
 /* BluVera shared script: cookie consent + GA4, image warm-cache, certificate lightbox */
 (function(){
   var ROOT = document.documentElement.getAttribute('data-root') || '';
-  var GA_ID = 'G-XXXXXXXXXX';   /* <- replace with your GA4 Measurement ID */
+  var GA_ID = 'G-HK3JNHNWR8';
   function loadGA(){
     if(!GA_ID || GA_ID.indexOf('XXXX') !== -1 || window.__gaLoaded) return;
     window.__gaLoaded = true;

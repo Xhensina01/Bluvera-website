@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bluveraexhaustfluid.com/sitemap.xml
+Sitemap: https://bluveraexhaustfluid.com/sitemap.xml
