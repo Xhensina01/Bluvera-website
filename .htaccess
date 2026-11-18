@@ -1,0 +1,21 @@
+# BluVera - Hostinger / Apache
+DirectoryIndex index.html
+Options -Indexes
+
+RewriteEngine On
+
+# www -> apex
+RewriteCond %{HTTP_HOST} ^www\.bluveraexhaustfluid\.com$ [NC]
+RewriteRule ^(.*)$ https://bluveraexhaustfluid.com/$1 [R=301,L]
+
+# remove index.html from URLs (/about/index.html -> /about/)
+RewriteCond %{THE_REQUEST} \s/+(.*?/)?index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# old pages merged into Products
+Redirect 301 /quality /products/#quality
+Redirect 301 /coverage /products/#coverage
+Redirect 301 /sustainability /products/#sustainability
+Redirect 301 /sq/cilesia /sq/produktet/#quality
+Redirect 301 /sq/mbulimi /sq/produktet/#coverage
+Redirect 301 /sq/qendrueshmeria /sq/produktet/#sustainability
